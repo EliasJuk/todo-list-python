@@ -3,9 +3,9 @@ from PySimpleGUI import PySimpleGUI as sg
 tarefas = []
 
 # Layout
-sg.theme('dark grey 6')
+sg.theme('GreenMono')
 layout = [
-  [sg.Text('ADICIONE UMA TAREFA', justification='center',size=(40,1), font=('Arial', 10, 'bold'))],
+  [sg.Text('TAREFAS', justification='center',size=(40,1), font=('Arial', 10, 'bold'))],
   [sg.Text('TAREFA:', font=('Arial', 10, 'bold')), sg.Input(key='todo_item',size=(26,1)), sg.Button(button_text='add', key='add_item', size=(8,1) )],
   [sg.Listbox(values=tarefas, size=(46, 16), key='listbox_items')],
   [sg.Button('Remover', size=(20, 1)), sg.Button('Editar', size=(20, 1))]
